@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: url('/assets/CursorSmol.png'), auto;
 }
 
 body{
-    cursor: url('/assets/Cursor.png'), default;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -17,6 +17,10 @@ body{
 
 main {
     max-width: 1000px;
+}
+
+a {
+    cursor: pointer;
 }
 
 .squad {

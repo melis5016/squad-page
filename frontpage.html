@@ -1,51 +1,36 @@
 <!DOCTYPE html>
-<html lang=en>
-   <head>
-     <meta charset="UFT-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squadbook FDND</title>
+  <link rel="stylesheet" href="styles/frontpage.css">
+</head>
+<body>
+  <main>
+    <div class="scene">
+      <div class="book" id="book" data-open="false">
 
-     <titel>Squadbook FDND</titel>
-     <link rel="stylesheet" href="frontpage.css">
-    </head>
+        
+        <div class="page page--right">
+          <img src="./assets/Openboek_desktop_rechts.png" alt="" class="page-img">
+          <a href="campus.html" class="page-link">Amstelcampus</a>
+        </div>
 
-    <body>
-
-      <header>
-         <nav>
-           <ul>
-            <li><a href="people.html">Studenten</a></li>
-            <li><a href="">Amstelcampus</a></li>
-           </ul>
-         </nav>
-      </header>
-
-      <main>
-          <div class="scene">
-          
-           <div class="book" id="book" data-open="false">
-             <div class="page page--left">Left page content</div>
-             <div class="page page--right">Right page content</div> 
-           <div class="spine"></div>
-
-    
-           <div class="cover" id="cover">
-             <div class="face face--front"><img src="Kaft_desktop.png" alt=kaft></div>
-             <div class="face face--back">Underside / left page</div>
-           </div>
-
+        
+        <div class="cover" id="cover" tabindex="0" role="button" aria-label="Open het boek">
+          <div class="face face--front">
+            <img src="./assets/Cover.png" alt="Kaft" class="face-img">
+          </div>
+          <div class="face face--back">
+            <img src="./assets/Openboek_desktop_links.png" alt="" class="face-img">
+            <a href="people.html" class="page-link">Studenten</a>
           </div>
         </div>
-      </main>
 
-
-
-
-
-
-
-
-
-
-    </body>
-
+      </div>
+    </div>
+  </main>
+  <script src="book.js"></script>
+</body>
 </html>

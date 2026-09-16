@@ -15,31 +15,37 @@ body{
     }
 }
 
-main {
-    max-width: 1000px;
-}
-
 a {
     cursor: pointer;
 }
 
-.squad {
+.book {
+    max-width: 1000px;
     display: grid;
     gap: 3em;
     background-image: url(/assets/Openboek_mobile.png);
     padding-inline-start: 5em;
-    padding-block-start: 5em;
+    padding-block: 5em;
     padding-inline-end: 1em;
+    background-size: 105% 100%;
+
+    h1 {
+        grid-column: 1/-1;
+        padding-inline-start: 2em;
+    }
 
     @media (min-width: 700px) {
+        padding-inline: 5em;
+        padding-block: 3em;
         grid-template-columns: 1fr 1fr;
-    padding: 5em;
         background-image: url(/assets/Openboek_desktop.png);
+        
         background-size: 100% 100%;
     }
 }
 
-.squad li {
+
+.book section {
     display: grid;
     gap: .5em;
     grid-template-columns: 1fr 3fr;
@@ -59,4 +65,39 @@ a {
         align-self: start;
         justify-self: center;
     }
+}
+
+.pageFlip{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    @media (min-width: 700px) {
+        grid-column: 1/-1;
+    }
+
+}
+
+.arrowLink {
+    
+    width: 40%;
+    /* grid-row: -1; */
+    padding: .5em;
+    border-radius: .5em;
+    transition-duration: .5s;
+
+    /* @media (min-width: 700px) {
+    width: 100%;
+    } */
+}
+
+.arrowLink:hover {
+    background-color: #D5D3C1;
+}
+
+.flipped{
+    /* position: absolute; */
+    /* right: 0; */
+    /* justify-self: right; */
+    margin-left: 90%;
 }

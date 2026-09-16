@@ -106,12 +106,12 @@ body{
   transform: translateX(-50%);
   padding: 10px 22px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.85);
+  background: rgba(202, 135, 203, 0.85);
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #2c2c2c;
+  color: #f7f3f3;
   text-decoration: none;
   box-shadow: 0 2px 6px rgba(0,0,0,.15);
 }
-.page-link:hover{ background: #fff; }
+.page-link:hover{ background: #eb88e3; }

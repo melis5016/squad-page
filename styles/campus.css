@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url('/assets/CursorSmol.png'), auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image: url(../assets/Tafel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.book {
+    max-width: 1000px;
+    display: grid;
+    gap: 3em;
+
+    background-image: url(../assets/Openboek_mobile.png);
+    background-size: 105% 100%;
+    background-repeat: no-repeat;
+
+    padding-inline-start: 5em;
+    padding-block: 5em;
+    padding-inline-end: 1em;
+    border-radius: 12px;
+    width: 1000px;
+    height: 800px;
+}
+
+.book h1 {
+    grid-column: 1 / -1;
+    padding-inline-start: 2em;
+    font-size: 2rem;
+    color: #333;
+}
+
+@media (min-width: 700px) {
+    .book {
+        grid-template-columns: 1fr 1fr;
+        background-image: url(../assets/Openboek_desktop.png);
+        background-size: 100% 100%;
+        padding-inline: 5em;
+        padding-block: 3em;
+    }
+}
+
+.book section {
+    display: grid;
+    gap: .5em;
+    /*grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2rem min-content 1fr;*/
+}
+
+.book section img {
+    /*grid-row: 1 / 3;*/
+    width: 400px;
+    height: 400px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.book section p {
+    /*grid-row: 2 / -1;*/
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.book section a {
+    align-self: start;
+    justify-self: center;
+    padding: .3em .6em;
+    background-color: #e0d6c3;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+.book section a:hover {
+    background-color: #d1c7b4;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;            
+    gap: 1em;
+}
+
+
+.page h2 {
+    font-size: 24px;
+    margin-bottom: .5em;
+}
+
+
+.page img {
+    width: 70%;               
+    max-width: 350px;         
+    height: auto;             
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+.page p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 80%;               
+}
+
+
+.pageFlip {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    margin-top: 1em;
+}
+
+.arrowLink {
+    padding: .5em;
+    border-radius: .5em;
+    transition-duration: .5s;
+}
+
+.arrowLink:hover {
+    background-color: #D5D3C1;
+}
+
+.flipped {
+    margin-left: 90%;
+}

@@ -23,7 +23,7 @@ a {
     max-width: 1000px;
     display: grid;
     gap: 3em;
-    background-image: url(/assets/Openboek_mobile.png);
+    background-image: url(assets/Openboek_mobile.png);
     padding-inline-start: 5em;
     padding-block: 5em;
     padding-inline-end: 1em;
@@ -38,7 +38,7 @@ a {
         padding-inline: 5em;
         padding-block: 3em;
         grid-template-columns: 1fr 1fr;
-        background-image: url(/assets/Openboek_desktop.png);
+        background-image: url(assets/Openboek_desktop.png);
         
         background-size: 100% 100%;
     }

@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +16,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .book {
     max-width: 1000px;
     display: grid;
@@ -31,8 +29,9 @@ body {
     padding-block: 5em;
     padding-inline-end: 1em;
     border-radius: 12px;
+
     width: 1000px;
-    height: 800px;
+    height: 650px;
 }
 
 .book h1 {
@@ -52,82 +51,54 @@ body {
     }
 }
 
-.book section {
-    display: grid;
-    gap: .5em;
-    /*grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2rem min-content 1fr;*/
-}
-
-.book section img {
-    /*grid-row: 1 / 3;*/
-    width: 400px;
-    height: 400px;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.book section p {
-    /*grid-row: 2 / -1;*/
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.book section a {
-    align-self: start;
-    justify-self: center;
-    padding: .3em .6em;
-    background-color: #e0d6c3;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #333;
-    transition: .3s;
-}
-
-.book section a:hover {
-    background-color: #d1c7b4;
-}
-
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;            
-    gap: 1em;
-}
-
-
 .page h2 {
-    font-size: 24px;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
-
-
 .page img {
-    width: 70%;               
-    max-width: 350px;         
-    height: auto;             
+    display: block;
+    margin: 0 auto;
+    width: 70%;              
+    max-width: 260px;        
+    height: auto;           
+    max-height: 300px;       
+    object-fit: cover;       
     border-radius: 6px;
-    object-fit: cover;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-
 
 .page p {
-    font-size: 16px;
-    line-height: 1.5;
-    width: 80%;               
-}
-
-
-.pageFlip {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    grid-column: 1 / -1;
     margin-top: 1em;
 }
 
+
+.book section img {
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+    max-height: 300px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.pageFlip {
+    display: contents;
+}
+
+.pageFlip a:first-child {
+    grid-column: 1;
+    justify-self: start;
+    align-self: end;
+}
+
+.pageFlip a:last-child {
+    grid-column: 2;
+    justify-self: end;
+    align-self: end;
+}
+
+
 .arrowLink {
+    width: 40%;
     padding: .5em;
     border-radius: .5em;
     transition-duration: .5s;

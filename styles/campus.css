@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    cursor: url('/assets/CursorSmol.png'), auto;
+    /*cursor: url('/assets/CursorSmol.png'), auto;*/
 }
 
 body {
@@ -60,26 +60,29 @@ body {
     width: 70%;              
     max-width: 260px;        
     height: auto;           
-    max-height: 300px;       
+    max-height: 195px;       
     object-fit: cover;       
     border-radius: 6px;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.page p {
-    margin-top: 1em;
+
+.locatieTag {
+    font-size: .8rem;
+    color: #777;
 }
 
 
-.book section img {
+
+/*.book section img {
     width: 70%;
     max-width: 250px;
     height: auto;
     max-height: 300px;
     border-radius: 6px;
     object-fit: cover;
-}
+}*/
 .pageFlip {
     display: contents;
 }
@@ -96,7 +99,9 @@ body {
     align-self: end;
 }
 
-
+a {
+    cursor: pointer;
+}
 .arrowLink {
     width: 40%;
     padding: .5em;
@@ -111,3 +116,4 @@ body {
 .flipped {
     margin-left: 90%;
 }
+

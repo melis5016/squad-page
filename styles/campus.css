@@ -21,7 +21,7 @@ body {
     display: grid;
     gap: 3em;
 
-    background-image: url(assets/Openboek_mobile.png);
+    background-image: url('../assets/Openboek_mobile.png');
     background-size: 105% 100%;
     background-repeat: no-repeat;
 
@@ -44,7 +44,7 @@ body {
 @media (min-width: 700px) {
     .book {
         grid-template-columns: 1fr 1fr;
-        background-image: url(../assets/Openboek_desktop.png);
+        background-image: url('../assets/Openboek_desktop.png');
         background-size: 100% 100%;
         padding-inline: 5em;
         padding-block: 3em;

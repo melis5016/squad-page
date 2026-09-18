@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*cursor: url('/assets/CursorSmol.png'), auto;*/
+    cursor: url('../assets/CursorSmol.png'), auto;
 }
 
 body {
